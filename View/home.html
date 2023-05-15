@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesuas - Cadastro de Cidadões</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="images/logo.png" alt="">
+            <label class="text-logo">GESUAS</label>
+        </div>
+
+        <button class="help">
+            <i class="fas fa-exclamation-circle"></i> Ajuda
+        </button>
+    </header>
+
+
+    <main>
+        <div>
+            <h1>Gerenciamento de cidadãos</h1>
+            <p>O sistema oferece a gestão das informações referentes aos serviços socioassistenciais prestados aos usuários pela rede municipal de assistência social e gera informações para monitoramento nas três esferas governamentais.</p>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Buscar NIS">
+            <button> Cadastrar cidadão</button>
+            <button> Filtros</button>
+        </div>
+
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td>NIS</td>
+                <td>Data de Cadastro</td>
+                <td>Ações</td>
+            </tr>
+            <tr>
+                {% for citizen in citizens %}
+                    <td>{{ citizen.name }}</td>
+                    <td>{{ citizen.nis }}</td>
+                    <td><button>Excluir</button></td>
+                    <td><button>Editar</button></td>
+                {% endfor %}
+            </tr>
+        </table>
+    </main>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+
+</html>
