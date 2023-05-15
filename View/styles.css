@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+main {
+    border-top: 0.4px solid #000000;
+}
+
+.logo {
+    width: 26.21px;
+    height: 28px;
+}
+
+.text-logo inicio{
+    width: 75px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #039855;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
