@@ -1,4 +1,5 @@
 <?php
+
     require_once 'Core/Core.php';
     
     //conecão com o banco
@@ -29,6 +30,7 @@
     // ob_end_clean();
 
     // echo $template;
+
 
 // class Citizen {
 //     private $name;
