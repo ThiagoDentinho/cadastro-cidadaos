@@ -11,14 +11,14 @@
                 $db_connection = 'mysql';
                 $db_host = 'localhost';
                 $db_database = 'gesuas';
-                $bd_username = 'root';
-                $dsn = 'mysql:host=localhost;dbname=gesuas';
+                $bd_username = 'gesuas';
+                $bd_password = 'dentinho';
                 
 
                 $dsn = $db_connection . ':host=' . $db_host . ';dbname=' . $db_database;
 
                 try {
-                    self::$cnnct = new PDO($dsn, $bd_username, '');
+                    self::$cnnct = new PDO($dsn, $bd_username, $bd_password);
 
                 } catch (PDOException $e) {
                     echo 'Erro ao conectar ao banco de dados: ' . $e->getMessage();
