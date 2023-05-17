@@ -13,7 +13,6 @@
                 $db_database = 'gesuas';
                 $bd_username = 'gesuas';
                 $bd_password = 'dentinho';
-                
 
                 $dsn = $db_connection . ':host=' . $db_host . ';dbname=' . $db_database;
 

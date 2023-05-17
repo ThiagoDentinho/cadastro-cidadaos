@@ -18,7 +18,7 @@
     </header>
 
     <main>
-
+        <!-- mensagem de suscesso ou de erro -->
         {% if msg %}
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -28,9 +28,11 @@
             </div>
         {% endif %}
 
+        <!-- home em si -->
         <h1>Gerenciamento de Cidadãos</h1>
         <p>O sistema oferece a gestão das informações referentes aos NIS, cadastro de cidadãos e pesquisa de nis</p><br><br>
         
+        <!-- cadastro de cidadão -->
         <div class="formularios">
             <form action="?page=Home&method=index" method="POST" enctype="multipart/form-data">
                     <label>
@@ -43,8 +45,8 @@
             </form>
         </div>
 
+        <!-- busca por nis -->
         <div class="">
-        
             <form action="page=Home&method=create" method="post" enctype="multipart/form-data">
                     <label>
                         <span><i class="icon icon-user-1"></i> Buscar por NIS</span><br>
@@ -54,12 +56,12 @@
                     <input type="hidden" name="acao" value="Pesquisar" />
                     <button  title="Enviar"><b class="icon icon-paper-plane-o"> Pesquisar</b></button>
             </form>
-
         </div>
     </main>
 </body>
 </html>
 
+<!-- controladores da modal -->
 <script>
     var modal = document.getElementById("myModal");
     var closeBtn = document.getElementsByClassName("close")[0];

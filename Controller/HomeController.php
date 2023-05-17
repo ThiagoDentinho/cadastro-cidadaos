@@ -47,17 +47,4 @@
                 echo $e->getMessage();
             }
         }
-
-        public function create($parameters)
-        {
-            
-            die('die');
-
-            try{
-                
-
-            }catch(Exception $e){
-                echo $e;
-            }
-        }
     }

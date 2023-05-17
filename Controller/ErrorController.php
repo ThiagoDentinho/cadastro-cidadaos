@@ -4,6 +4,6 @@
     {
         public function index()
         {
-            echo 'esrro';
+            echo 'Página não encontrada';
         }
     }

@@ -34,22 +34,6 @@
                 $controller = 'ErrorController';
             }
 
-            // $parameters = array();
-           
-            // //pegando o nome
-            // if($_POST['name']){
-            //     $parameters = array('name' => $_POST['name'], 'nis' => 'lixo');
-
-            // }
-
-            // //pegando o nis
-            // if($_POST['nis']){
-            //     $parameters = array('nis' => $_POST['nis']);
-            //     $parameters = array('name' => 'lixo');
-            // }
-            // // var_dump($controller, $action, $parameters, $_POST);
-            // // die;
-
             call_user_func_array(array(new $controller, $action), array($_POST));
         }
     }
