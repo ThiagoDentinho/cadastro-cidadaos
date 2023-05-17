@@ -16,9 +16,7 @@
     //depedencia (Twig)
     require_once 'vendor/autoload.php';
 
-
-    // $template = file_get_contents('view/home.html');
-
+    //iniciando o core da aplicação
     $core = new Core;
     $core->start($_GET);
 

@@ -4,6 +4,6 @@
     {
         public function index()
         {
-            echo 'erro';
+            echo 'esrro';
         }
     }
